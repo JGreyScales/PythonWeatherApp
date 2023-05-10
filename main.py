@@ -55,6 +55,6 @@ while True:
                 window["humidity"].update(f"Humidity:{weather['humidity']}%")
                 window["wind"].update(f"Wind Speed:{weather['wind_speed']}km/hr")
             except ValueError:
-                window["output"].update("Error")
+                window["temp"].update("Error")
 
 window.close()
